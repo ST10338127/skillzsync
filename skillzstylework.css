@@ -1,0 +1,205 @@
+/* CSS for the header section */
+header {
+	background-color: #3e22f980;
+	color: #ffffff;
+	padding: 20px 0;
+	text-align: center;
+}
+
+.logo img {
+	width: 120px;
+	height: 120px;
+	border: 2px solid #ffffff; 
+	border-radius: 50%; 
+	display: block; 
+	margin: 0 auto;
+}
+
+.strapline {
+	font-size: 24px;
+}
+
+nav ul {
+	list-style: none;
+	text-align: center; 
+	margin-top: 10px; 
+}
+
+nav li {
+	display: inline;
+	margin: 0 20px;
+}
+
+nav a {
+	text-decoration: none;
+	color: #ffffff;
+	font-weight: bold;
+	font-size: 18px;
+}
+.active{
+	color: rgb(12, 15, 239);
+}
+
+nav a:hover {
+	text-decoration: underline;
+}
+
+/* Main content styles */
+.main-content {
+    background: linear-gradient(45deg, #17a2b8, #0c8599);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+    margin: 20px;
+    text-align: center;
+}
+
+.main-content h1 {
+    font-size: 48px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.main-content p {
+    font-size: 20px;
+    line-height: 1.6;
+    margin: 20px 0;
+    color: #f0f0f0;
+}
+
+.main-content h2 {
+    font-size: 36px;
+    color: #fff;
+    margin-top: 40px;
+    text-decoration: underline;
+}
+
+.featured-jobs, .create-profile {
+    background: linear-gradient(45deg, #0c8599, #17a2b8);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+    margin: 20px;
+    text-align: center;
+}
+
+.featured-jobs h2, .create-profile h2 {
+    font-size: 36px;
+    color: #fff;
+    text-decoration: underline;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.featured-jobs p, .create-profile p {
+    font-size: 20px;
+    line-height: 1.6;
+    margin: 20px 0;
+    color: #f0f0f0;
+}
+ 
+
+/* CSS for the main footer section */
+footer {
+	background-color: #3e22f980;
+	color: #ffffff;
+	padding: 10px 0;
+	text-align: center;
+	}
+	
+	.footer-content {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	}
+	
+	.footer-content img {
+	width: 80px;
+	height: auto;
+	}
+	
+	.footer-content ul {
+	list-style: none;
+	}
+	
+	.footer-content li {
+	display: inline;
+	margin-right: 20px;
+	}
+	
+	.footer-content a {
+	text-decoration: none;
+	color: #ffffff;
+	font-weight: bold;
+	}
+	
+	.footer-content a:hover {
+	text-decoration: underline;
+	}
+
+	/* Media query for screens smaller than 960px and mobile portrait orientation */
+@media only screen and (max-width: 960px) {
+    .logo img {
+        width: 100px;
+        height: 100px;
+        border-width: 1px;
+    }
+
+    .strapline {
+        font-size: 18px;
+    }
+
+    nav ul {
+        margin-top: 5px;
+    }
+
+    nav li {
+        margin: 0 10px;
+    }
+
+    nav a {
+        font-size: 16px;
+    }
+
+    /* Main content section */
+    .main-content,
+    .featured-jobs,
+    .create-profile {
+        padding: 20px;
+        margin: 10px;
+    }
+
+    .main-content h1,
+    .featured-jobs h2,
+    .create-profile h2 {
+        font-size: 32px;
+        margin-bottom: 15px;
+    }
+
+    .main-content p,
+    .featured-jobs p,
+    .create-profile p {
+        font-size: 16px;
+        margin: 15px 0;
+    }
+
+    /* Footer section */
+    .footer-content img {
+        width: 60px;
+    }
+
+    .footer-content ul {
+        margin-right: 10px;
+    }
+
+    .footer-content li {
+        margin-right: 10px;
+    }
+
+    .footer-content a {
+        font-size: 14px;
+    }
+}

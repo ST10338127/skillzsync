@@ -1,0 +1,269 @@
+/* CSS for the header section */
+header {
+	background-color: #3e22f980;
+	color: #ffffff;
+	padding: 20px 0;
+	text-align: center;
+}
+
+.logo img {
+	width: 120px;
+	height: 120px;
+	border: 2px solid #ffffff; 
+	border-radius: 50%; 
+	display: block; 
+	margin: 0 auto;
+}
+
+.strapline {
+	font-size: 24px;
+}
+
+nav ul {
+	list-style: none;
+	text-align: center; 
+	margin-top: 10px; 
+}
+
+nav li {
+	display: inline;
+	margin: 0 20px;
+}
+
+nav a {
+	text-decoration: none;
+	color: #ffffff;
+	font-weight: bold;
+	font-size: 18px;
+}
+.active{
+	color: rgb(12, 15, 239);
+}
+
+nav a:hover {
+	text-decoration: underline;
+}
+
+/* CSS for the main hero section */
+.hero {
+background-image: url('image3.jpg');
+background-size: cover;
+font-size: 25px; 
+color: #ffffff;
+text-align: center;
+padding: 350px 0;
+}
+
+.hero-content {
+border-radius: 5px;
+padding: 20px;
+max-width: 800px;
+margin: 0 auto;
+}
+
+
+button {
+color:lightgoldenrodyellow;
+font-size: 20px; 
+margin-top: 20px; 
+} 
+
+
+.b1{
+background-color: wheat;
+border:5px darkcyan double;     
+border-radius: 5px;
+color:black;
+
+}.b1:hover{
+box-shadow : 0 8px 16px 0 black, 
+0 6px 20px  0 rgba(0, 0, 0, 0.19); 
+}
+
+
+/* CSS for the main hero-2 section */
+.hero-2 {
+background-color: #007BFF;
+font-size: 25px; 
+color: #ffffff;
+text-align: center;
+padding: 50px 0;
+}
+
+
+/* CSS for the main hero-3 section */
+.hero-3 {
+background-image: url('image7.jpg');
+background-size: cover;
+font-size: 25px; 
+color: rgb(249, 248, 255);
+text-align: center;
+padding: 500px 0;
+}
+
+.hero-content-3 {
+border-radius: 5px;
+padding: 20px;
+max-width: 800px;
+margin: 0 auto;
+}
+
+/* CSS for the main hero-4 section */
+.hero-4 {
+background-color: #3e22f980;
+font-size: 25px; 
+color: #ffffff;
+text-align: center;
+padding: 50px 0;
+}
+
+/* CSS for the main content section */
+.main-content { 
+display: grid; 
+grid-template-columns: repeat(3, 1fr); 
+grid-template-rows: repeat(3, 1fr); 
+grid-gap: 10px; 
+background-color: whitesmoke; 
+padding: 10px; 
+}
+.num { 
+background-color: #3e22f980; 
+text-align: center; 
+color: white;
+padding: 10px 10px; 
+font-size: 20px; 
+}
+
+/* CSS for the main hero-5 section */
+.hero-5 {
+background-image: url('image2.jpg');
+background-size: cover;
+font-size: 25px; 
+color: #ffffff;
+text-align: center;
+padding: 50px 0;
+}
+
+/* CSS for the main footer section */
+footer {
+background-color: #3e22f980;
+color: #ffffff;
+padding: 10px 0;
+text-align: center;
+}
+
+.footer-content {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.footer-content img {
+width: 80px;
+height: auto;
+}
+
+.footer-content ul {
+list-style: none;
+}
+
+.footer-content li {
+display: inline;
+margin-right: 20px;
+}
+
+.footer-content a {
+text-decoration: none;
+color: #ffffff;
+font-weight: bold;
+}
+
+.footer-content a:hover {
+text-decoration: underline;
+}
+
+/*CSS for the newsletter section */
+.newsletter {
+	text-align: center;
+	font-size: 15px;
+	margin-top: 10px;
+}
+
+/* width and height for the Google Form */
+.newsletter iframe {
+	width: 100%;
+	height: 682px;
+	border: none;
+}
+
+/* Media query for screens smaller than 960px */
+@media screen and (max-width: 960px) {
+    /* Adjustments for header */
+    header {
+        padding: 10px 0;
+    }
+
+    .logo img {
+        width: 80px;
+        height: 80px;
+        border-width: 1px;
+        border-radius: 50%;
+    }
+
+    .strapline {
+        font-size: 20px;
+    }
+
+    nav ul {
+        margin-top: 5px;
+    }
+
+    nav li {
+        margin: 0 10px;
+    }
+
+    nav a {
+        font-size: 16px;
+    }
+
+    /* Adjustments for hero sections */
+    .hero {
+        padding: 200px 0;
+    }
+
+    .hero-3 {
+        padding: 300px 0;
+    }
+
+    /* Adjustments for main content */
+    .main-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .num {
+        font-size: 16px;
+    }
+
+    /* Adjustments for newsletter section */
+    .newsletter {
+        font-size: 14px;
+    }
+
+    /* Adjustments for iframe */
+    .newsletter iframe {
+        height: 500px;
+    }
+
+    /* Adjustments for footer */
+    .footer-content img {
+        width: 60px;
+    }
+
+    .footer-content li {
+        margin-right: 10px;
+    }
+
+    .footer-content a {
+        font-size: 14px;
+    }
+}
